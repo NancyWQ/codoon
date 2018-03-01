@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>关键词搜索结果</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/divide.css"/>
+</head>
+<body>
+<div class="header">
+    <div class="title"></div>
+</div>
+<ul class="divideInfo"></ul>
+<table class="divideChoose">
+</table>
+<p>每页显示条数：
+    <select name="num" id="num">
+        <option value="1">3</option>
+        <option value="2">6</option>
+        <option value="3" selected>9</option>
+        <option value="4">12</option>
+</select>
+</p>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/commonFunction.js"></script>
+<script>
+    header1();
+    var kw=location.search.split("=")[1];
+//    kw=convert_int_to_utf8(kw);
+//    url转成中文
+    kw=decodeURI(kw);
+    console.log(kw);
+    function load(pno=1,pageSize=9) {
+//        pno=2;
+        $.ajax({
+            type: "get",
+            url: "data/search/getProductsByKw.php",
+            //url:"http://localhost/gudong/data/search/getProductsByKw.php",
+            data: {kw: kw,pno:pno,pageSize:pageSize}
+        }).then((data)=>{
+            console.log(data);
+            var html = "";
+            for (var artTitle of data.data) {
+                html += `<li><a href="article.html?aid="${artTitle.aid}>${artTitle.title}</a></li>`;
+            }
+            $(".divideInfo").html(html);
+            html = `<tbody>
+                <tr>
+        <td><a href="0">上一页</a></td>`;
+            //html=`<td>上一页</td>`;
+            for (var i = 1; i <= data.pageCount; i++) {
+//        html+=`<td><a href="#">上一页</a></td>`
+                html += `<td><a href=${i}>${i}</a></td>`;
+            }
+            html += `<td><a href="-1" data-num="${data.pageCount}">下一页</a></td>
+         </tr>
+    </tbody>`;
+            $(".divideChoose").html(html);
+        $(`.divideChoose>tbody>tr>:nth-child(${pno+1})>a`).addClass("on");
+            if(pno==1){
+            $(".divideChoose>tbody>tr>:nth-child(1)>a").click(function(){
+//            a元素不被点击
+                return false;
+            })
+            }else if(pno==data.pageCount){
+                $(".divideChoose>tbody>tr>:last-child>a").click(function(){
+//            a元素不被点击
+                    return false;
+                })
+            }
+        })
+    }
+    load();
+    $(".divideChoose").on("click","a",function(e){
+        e.preventDefault();
+        var $tar=$(e.target);
+        var $pno=parseInt($tar.attr("href"));
+        var pageNow=$(e.target).parent().siblings().children(".on").parent().index();
+        var $num=parseInt($("#num").val())*3;
+        console.log( $num);
+        if($pno==0){
+//            console.log($(e.target).parent().siblings().children(".on").parent().index());
+//            1.找到坐标
+            if(pageNow>=1){
+                pageNow=pageNow-1;
+                load(pageNow,$num);
+            }
+
+        }else if($pno==-1){
+            console.log($(e.target).data("num"));
+            if(pageNow<=$(e.target).data("num")){
+                pageNow=pageNow+1;
+                load(pageNow,$num);
+            }
+        }else {
+            load($pno,$num);
+        }
+    })
+    $("#num").change(function(e){
+        console.log(1);
+        var $num=parseInt($("#num").val())*3;
+        load(1,$num);
+    })
+</script>
+</html>

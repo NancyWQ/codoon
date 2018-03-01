@@ -1,0 +1,26 @@
+.header>.title{
+    background:gray;
+    position:relative;
+    z-index: 10;
+    margin-bottom: 50px;
+}
+.header>.title .header_first>ul>.menu>ul>:nth-child(1)>a{
+    color:#fff;
+}
+.header>.title .header_first>ul>.menu>ul>:nth-child(1)>a:hover{
+    color:#00bc71;
+}
+.divideInfo>li>a{
+    text-decoration: dashed;
+    color:#00bc71;
+    text-align: left;
+}
+.divideChoose>tbody>tr>td>a{
+    color:#699000;
+    border: 1px solid #2b2b2b;
+    border-radius: 15%;
+}
+.divideChoose>tbody>tr>td>a.on{
+    background: #00bc71;
+    color:#000000;
+}

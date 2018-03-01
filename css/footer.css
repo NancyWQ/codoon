@@ -1,0 +1,23 @@
+.footer{
+    background: #f2f4f6;
+}
+.footer>.main{
+    position:relative;
+}
+.footer>.main>table{
+width:60%;border:none;margin:0 auto;
+    padding:20px 0px;
+}
+.footer>.main>table>tbody>tr>td{
+    text-align: center;
+    padding-bottom:10px;
+}
+
+.footer>.main>table>tbody>tr>td>a,.footer>.main>table{
+    color:#7e858b;
+}
+.footer>.main>div{
+    position: absolute;top:-40px;left:416px;
+    opacity: 0;
+    /*display: none;*/
+}

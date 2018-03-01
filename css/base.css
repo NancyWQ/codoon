@@ -1,0 +1,92 @@
+body{
+    width:100%;
+    height:100%;
+    background: #ffffff;
+    margin:0;
+    padding:0;
+    font-size:1em;
+}
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+/*外边框*/
+input,button,a{
+    outline: none;
+}
+i{
+    display:inline-block;
+}
+a{
+text-decoration:none;
+color:#fff;
+font-size:1em;
+display:inline-block;
+}
+.left{float:left;}
+.right{float:right;}
+.none{display:none;}
+.display{display:inline-block;}
+
+.flex-row{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.flex-col{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.main{
+    width:70.28%;
+    height:100%;
+    margin:0 auto;
+    padding:0;
+}
+.header{
+    position:relative;
+}
+ .flip{transform: rotate3d(0,1,0,0deg);transition-duration: 0.4s;}
+.fliped{transform: rotate3d(0,1,0,-180deg);transition-duration: 0.4s;}
+i{
+    display: inline-block;
+}
+.police{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/spite_main.png") -546px -63px no-repeat;
+    margin-right: 5px;
+    margin-bottom:-2px;
+}
+.weibo{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url("../img/spite_main.png") -401px -63px no-repeat;
+}
+.wechat{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url("../img/spite_main.png") -433px -63px no-repeat;
+}
+.solgnWhite{
+    background: url("../img/spite_main.png") -465px -63px no-repeat;
+    width: 81px;
+    height: 30px;
+}
+.company{
+    background: url("../img/spite_main.png") -92px -0px no-repeat;
+    width: 164px;
+    height: 56px;
+}
+.foreign{
+    background: url("../img/spite_main.png") -256px -0px no-repeat;
+    width: 229px;
+    height: 56px;
+}
+

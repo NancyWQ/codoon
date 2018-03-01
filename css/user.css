@@ -1,0 +1,893 @@
+.header{
+    width:100%;
+    height:85px;
+    background-color: #709e18;
+    text-align: center;
+    z-index: 9;
+    cursor: default;
+    color: #333333;
+    box-sizing: border-box;
+    border-bottom: 5px solid #C3D0A9;
+
+}
+.header>.main{
+    height:100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+.header>.main>a{
+    /*background 注意不要分开写 不然会以下面的为准*/
+    color: #699000;
+    text-decoration: none;
+    width: 120px;
+    height: 50px;
+    display: inline-block;
+    background: url(../img/user/new_pic.png)  -4px -177px no-repeat;
+    overflow: hidden;
+}
+.header>.main>ul{
+    width:40%;
+    height:100%;
+    text-align: center;
+    line-height: 100%;
+    box-sizing: border-box;
+    padding: 1% 3%;
+}
+.header>.main>ul>li{
+    float: left;
+    width:20%;
+    text-align: center;
+    height: 100%;
+    line-height:30px;
+    vertical-align: middle;
+    margin-left: 5px;
+    box-sizing: border-box;
+}
+.header>.main>ul>li>a{
+    display: inline-block;
+    height:50%;
+    line-height: 100%;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+    padding: 3px 3px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.header>.main>ul>li>a.choose{
+background-color: #576e1a;
+}
+.header>.main>div{
+    width:20%;
+    height:35px;
+    position: relative;
+}
+.header>.main>div>.frontUser{
+    width:70%;
+    height:100%;
+    position: absolute;
+    top: 0px;
+    background: transparent;
+    /*cursor: pointer;*/
+}
+.header>.main>div>ul{
+    width:70%;
+    height:500%;
+    border-radius: 4px;
+    z-index: 10;
+}
+.header>.main>div>ul>li{
+    padding: 5px;
+box-sizing: border-box;
+    color: #699000;
+    background-color: #DAE5C5;
+    height:20%;
+    /*border-radius: 4px;*/
+}
+.header>.main>div>ul>li>a{
+    display: inline-block;
+    color: #699000;
+    line-height: 100%;
+    width: 100%;
+    /*background-color: #DAE5C5;*/
+}
+.sanDown{
+    width:0px;
+    height: 0px;
+    border:5px solid transparent;
+    border-top-color:#333;
+    float: right;
+    margin-top:15px;
+}
+.fans{
+    width: 32px;
+    height: 35px;
+    line-height: 27px;
+    margin-left: 10px;
+    z-index: 5;
+    background: url(../img/user/img.png)  -65px -271px no-repeat;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+    top:3px;
+    right:0px;
+}
+.header>.main>div>.message{
+position: absolute;
+top:33px;
+right:0px;
+    width: 112px;
+    text-align: center;
+    padding-top: 3px;
+    z-index: 11;
+}
+.header>.main>div>.message>li{
+    display: inline-block;
+    width: 100%;
+    height: 27px;
+    color: #333333;
+    text-decoration: none;
+    background-color: #ffeb7f;
+    box-sizing: border-box;
+    padding: 0px;
+    z-index: 11;
+}
+.header>.main>div>.message>li>a{
+    display: inline-block;
+    width:60%;
+    height: 27px;
+    color: #333333;
+    text-decoration: none;
+    background-color: #ffeb7f;
+    box-sizing: border-box;
+    z-index: 11;
+}
+.header>.main>div>.message>li>span{
+    color:#FF0000;
+}
+/*主体部分*/
+.intr{
+    width:100%;
+    background: #F3F3F3;
+}
+.intr>div{
+    width:100%;
+}
+.intr>div>.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*左边*/
+.intr>div>.main>.left{
+    width:30%;
+}
+.intr>div>.main>.left>:first-child{
+    box-shadow: 5px 5px 15px #ccc;
+    border: 5px solid #ffffff;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.intr>div>.main>.left>:nth-child(2){
+    color: #5A8500;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.intr>div>.main>.left>:nth-child(2):hover{
+    text-decoration: underline;
+}
+.intr>div>.main>.left>.honour{
+    width:100%;
+    position: relative;
+    height:30px;
+    margin-bottom: 20px;
+}
+.intr>div>.main>.left>.honour>ul{
+    width:100%;
+}
+.intr>div>.main>.left>.honour>ul>li{
+    float: left;
+    margin-right: 10px;
+}
+.intr>div>.main>.left>.honour>ul>li>.km,.intr>div>.main>.left>.honour>ul>li>.location,.intr>div>.main>.left>.honour>ul>li>.xunzhang,.intr>div>.main>.left>.honour>ul>li>.kms{
+    width: 18px;
+    height: 21px;
+    background: url(../img/user/img.png) no-repeat;
+    overflow: hidden;
+    background-position: -106px -589px;
+    display: block;
+}
+.intr>div>.main>.left>.honour>ul>li>.location{
+    background-position: -36px -606px;
+}
+.intr>div>.main>.left>.honour>ul>li>.xunzhang{
+    width: 19px;
+    height: 18px;
+    background-position: -137px -589px;
+}
+.intr>div>.main>.left>.honour>ul>li>.kms{
+    width: 21px;
+    height: 19px;
+    background-position: -7px -606px;
+}
+.intr>div>.main>.left>.honour>a{
+    color: #333333;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #FFEB7F;
+    position: absolute;
+    right: 10px;
+    top: -10px;
+    padding: 5px;
+    font-size: 12px;
+    padding-top: 8px;
+}
+.intr>div>.main>.left>.honour>a>:first-child{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-right: 8px;
+    padding-left: 4px;
+}
+.intr>div>.main>.left>.honour>a>:last-child {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    z-index: 5;
+}
+.intr>div>.main>.left>.activities{
+}
+.intr>div>.main>.left>.activities>b{
+    font-size: 14px;
+    color: #666666;
+    font-weight: normal;
+}
+.intr>div>.main>.left>.activities>span{
+    float:right;
+}
+.intr>div>.main>.left>.activities>a {
+    width: 8px;
+    height: 9px;
+    display: inline-block;
+    margin-top: 8px;
+    margin-right: 10px;
+    color: #699000;
+    text-decoration: none;
+    background: url(../img/user/img.png) no-repeat;
+    background-position: -131px -271px;
+    overflow: hidden;
+    float:right
+}
+.intr>div>.main>.left>.activities>b+a{
+    background-position: -140px -271px;
+}
+.intr>div>.main>.left>.activities>.line1 {
+    border-bottom: 1px #e2e2e2 solid;
+    height: 1px;
+    width: 100%;
+    overflow: hidden;
+}
+.intr>div>.main>.left>.activities>.line2{
+    border-top: 1px #ffffff solid;
+    height: 15px;
+    width: 100%;
+    overflow: hidden;
+}
+.intr>div>.main>.left>.activities>:last-child{
+    width:100%;
+}
+.intr>div>.main>.left>.activities>:last-child>img{
+    width:100%;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+.intr>div>.main>.right{
+    width:70%;
+    position: relative;
+}
+.intr>div>.main>.right>.bgtop{
+    background: url(../img/user/home_top.png) no-repeat;
+    width: 733px;
+    height: 35px;
+}
+.intr>div>.main>.right>.content{
+    width: 650px;
+    height: auto;
+    min-height: 900px;
+    z-index: 2;
+    overflow-x: hidden;
+    padding-left: 46px;
+    padding-right: 37px;
+    position: relative;
+    text-align: center;
+    background: url(../img/user/home_center.png) repeat-y right;
+    padding-bottom: 120px;
+}
+.intr>div>.main>.right>.content>p{
+    position: relative;
+    z-index: 50;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.intr>div>.main>.right>.content>.dPicture{
+    width: 100%;
+    height:200px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+.intr>div>.main>.right>.content>.dPicture>.dDetail{
+    top: 10px;
+    width: 100px;
+    height: 139.823px;
+    z-index: 0;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+}
+.intr>div>.main>.right>.content>.dPicture>.dD1{
+    left: 33.4936px;
+}
+.intr>div>.main>.right>.content>.dPicture>.dD2{
+left:466.506px;
+}
+.intr>div>.main>.right>.content>.dPicture>.dD3{
+left:243.5px;
+}
+.intr>div>.main>.right>.content>.dPicture>.dDetail>img{
+    width:100%;
+    height:100%;
+}
+.intr>div>.main>.right>.content>.dPicture>.dDetail>p{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    position: absolute;
+    top:45px;
+    left:5px;
+    vertical-align: middle;
+}
+.intr>div>.main>.right>.content>.dPicture>.dDetail>div{
+    width: 100%;
+    height:100%;
+    background: transparent;
+    position: absolute;
+    top: 0px;
+}
+.intr>div>.main>.right>.content>.dPicture>.dBg{
+    position:absolute;
+    top:-25px;left: 0;
+    width: 100%;height:231px;
+    z-index: -99999;
+    background: url(../img/user/fd_bg.gif) repeat-x;
+}
+.intr>div>.main>.right>.content>.nav{
+    display: inline-block;
+    width:49.5%;
+    /*float: left;*/
+    color: #FFFFFF;
+    background-color: #a3a3a3;
+    cursor: default;
+    height:30px;
+    font-weight: normal;
+    border-sizing:border-box;
+}
+.intr>div>.main>.right>.content>.on{
+background-color: #81a833;
+    background-image: url(../img/user/u140_normal.png);
+    background-repeat: no-repeat;
+    background-position: 50px 18px;
+}
+.intr>div>.main>.right>.content>.phoneBanner{
+    border: 1px solid #D7D7D7;
+    border-top: none;
+    border-radius: 0 0 7px 7px;
+    width: 648px;
+    height: 330px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.intr>div>.main>.right>.content>.phoneBanner>a{
+    display: block;
+    width: 648px;
+    height:330px;
+    border-radius:inherit;
+}
+.intr>div>.main>.right>.content>.phoneBanner>a>img{
+    width: 648px;
+    height:330px;
+border-radius: inherit;
+}
+.intr>div>.main>.right>.content>.phoneBanner>div{
+    width:50%;
+    height:100%;
+}
+.intr>div>.main>.right>.content>.phoneBanner>div>b{
+    text-align: left;
+    width: 100%;
+    margin-left: 10px;margin-top: 10px;display:inline-block;
+    color: #333333;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.intr>div>.main>.right>.content>.phoneBanner>div>b>b{
+    color: #999999;
+    font-size: 14px;
+    font-weight: normal;
+}
+.intr>div>.main>.right>.content>.phoneBanner>div>div{
+    margin-left: 15px;letter-spacing: 1px;
+    float: left;
+}
+.intr>div>.main>.right>.content>.phoneBanner>div>div>img{
+    float: left;
+}
+.intr>div>.main>.right>.content>.phoneBanner>div>div>ul{
+    margin-left: 20px;
+    color: #505050;
+    font-size: 14px;
+    float: left;
+}
+.intr>div>.main>.right>.content>.phoneBanner>div>div>ul>li{
+    height: 35px;
+    margin-bottom: 9px;
+    line-height: 35px;
+    text-align: left;
+}
+.intr>div>.main>.right>.content>.phoneBanner>div>div>ul>li>a{
+
+}
+.intr>div>.main>.right>.content>.phoneBanner>div>div>ul>li>a>span{
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    color: #505050;
+}
+.detailCommon{
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background: url(../img/user/iconbg.png) no-repeat;
+}
+.time{  background-position: -77px 0px;  }
+.distance{    background-position: -40px 0;}
+.kaluli{background-position: 0px 0;}
+.aveSpeed{background-position: -2px -38px;}
+.aveMin{background-position: -40px -38px;}
+.fastSpeed{background-position: -77px -38px;}
+.intr>div>.main>.right>.content>.phoneBanner>div>.map{
+    height:100px;
+    width: 90%;
+    margin: 20px 0px;
+}
+.intr>div>.main>.right>.content>.phoneBanner>div>.weekExercise{
+    width:90%;
+    height:158px;
+    position: relative;
+}
+.intr>div>.main>.right>.content>.phoneBanner>div>.weekExercise>p{
+height:100%;
+    width:14px;
+    font-size: 14px;
+    text-align: center;
+    color:#333;
+    position: absolute;
+    left: -20px;
+    top:31px;
+}
+.intr>div>.main>.right>.content>.phoneBanner>div>.weekExercise>.bgLine{
+    height: 31px;
+    text-align: right;
+    border-top: 1px solid #d2d2d2;
+    z-index: 0;
+    position: relative;
+    width: 300px;
+}
+.intr>div>.main>.right>.content>.phoneBanner>div>.weekExercise>.bgLineLast{
+    border-bottom: 1px solid #d2d2d2;
+
+}
+.intr>div>.main>.right>.content>.phoneBanner>div>.weekExercise>:first-child{
+    border-top: none;
+
+}
+.intr>div>.main>.right>.content>.phoneBanner>div>.weekExercise>.date {
+    position: absolute;
+    /*bottom: 0;*/
+    /*right: 0;*/
+    text-align: center;
+    font-size: 11px;
+    z-index: 10;
+}
+.intr>div>.main>.right>.content>.phoneBanner>div>.weekExercise>.date>tbody>tr>td{
+    width: 36px;
+}
+.intr>div>.main>.right>.content>.phoneBanner>div>.weekExercise>.miles{
+    position: absolute;
+    top:0px;
+    right: -20px;
+    text-align: center;
+}
+.intr>div>.main>.right>.content>.phoneBanner>div>.weekExercise>.miles>tbody>tr>td{
+    height:30px;
+    font-size: 11px;
+    color: #333333;
+}
+.intr>div>.main>.right>.content>.phoneBanner>div>.weekExercise>.zhuzhuangtu{
+width: 282px;
+    height: 129px;
+    position: absolute;
+    top: 31px;
+    left:0px;
+    /*background: #000000;*/
+}
+.intr>div>.main>.right>.content>.phoneBanner>div>.weekExercise>.zhuzhuangtu>.can{  position: relative;  }
+/*sportsIntr*/
+.intr>.sportIntr>.main>.left>:first-child{
+    font-size: 24px;
+    padding: 0 0 0 38px;
+    font-weight: normal;
+    box-shadow: none;
+    border: none;
+}
+.intr>.sportIntr>.main>.left>ul{
+    margin:10px;
+}
+.intr>.sportIntr>.main>.left>ul>li{
+    display: block;
+    margin: 10px 0;
+}
+.intr>.sportIntr>.main>.left>ul>li>a{
+    display: inline-block;
+    color: #699000;
+    padding:0 30px;
+    width:140px;
+}
+.intr>.sportIntr>.main>.left>ul>li>a.on{
+    border-radius: 8px;
+    background-color: #a2ad8b;
+    text-decoration: none;
+    color: #fff;
+}
+.intr>.sportIntr>.main>.left>ul>li>a:hover{
+    border-radius: 8px;
+    background-color: #d8e1c8;
+    text-decoration: none;
+    color: #fff;
+}
+.intr>.sportIntr>.main>.left>ul>li>a>h5{
+    font-weight: normal;
+    float: left;
+    margin-left: 20px;
+    padding: 11px 0;
+}
+.intr>.sportIntr>.main>.left>ul>li>a>.SportCommon{
+    width: 19px;
+    height: 19px;
+    margin-top: 12px;
+    background: url(../img/user/img.png) no-repeat;
+    overflow: hidden;
+    float:left;
+}
+.intr>.sportIntr>.main>.left>ul>li>a>.sportSport{  background-position: -231px -104px;  }
+.intr>.sportIntr>.main>.left>ul>li>a>.sportBody{  background-position: -231px -170px  }
+.intr>.sportIntr>.main>.left>ul>li>a>.sportExercise{  background-position: -231px -125px;  }
+.intr>.sportIntr>.main>.left>ul>li>a>.sportSleep{  background-position: -230px -146px;  }
+.intr>.sportIntr>.main>.left>ul>li>a>.sportPhone{  background-position: -231px -194px;  }
+.intr>.sportIntr>.main>.left>ul>li>a>.sportRide{  background-position: -274px -86px;  }
+.intr>.sportIntr>.main>.right>.content>div>p{
+    text-align: left;
+    color: #333333;
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top:30px;
+}
+.intr>.sportIntr>.main>.right>.content>div>.healthyDetails{
+    height:190px;
+    display: flex;
+    justify-content: space-between;
+}
+.intr>.sportIntr>.main>.right>.content>div>.healthyDetails>div{  height:30%;  }
+.intr>.sportIntr>.main>.right>.content>div>.healthyDetails>div>.mySportTotal{
+    width: 58px;
+    height: 56px;
+    background: url(../img/user/ico3.png) no-repeat;
+    overflow: hidden;
+    float:left;
+}
+.intr>.sportIntr>.main>.right>.content>div>.healthyDetails>div>.totalDistance{  background-position: -4px -65px;  }
+.intr>.sportIntr>.main>.right>.content>div>.healthyDetails>div>.totalTime{  background-position: -61px -65px;  }
+.intr>.sportIntr>.main>.right>.content>div>.healthyDetails>div>.totalCal{  background-position: -119px -65px;  }
+.intr>.sportIntr>.main>.right>.content>div>.healthyDetails>div>.totalDetail{
+color:#e0b02e;
+    margin-left:10px;
+    font-size: 14px;
+    float: left;
+}
+.intr>.sportIntr>.main>.right>.content>div>.healthyDetails>div>.totalDetail>p{  margin-bottom: 10px;  }
+.intr>.sportIntr>.main>.right>.content>div>.healthyDetails>div>.totalDetail>h1{  float: left;  }
+.intr>.sportIntr>.main>.right>.content>div>.healthyDetails>div>.totalDetail>h1+p{
+    float: left;
+    margin-top: 10px;
+}
+.intr>.sportIntr>.main>.right>.content>div>.healthyDetails>.canDo{
+    width:24%;
+    height:93%;
+    background:  #f1cc7e;
+    padding-top: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color:#FFFFFF;
+}
+.intr>.sportIntr>.main>.right>.content>div>.healthyDetails>.canDo1{  background: #b0b0b0;  }
+.intr>.sportIntr>.main>.right>.content>div>.healthyDetails>div>.mySportTotal2{
+    width: 98px;
+    height: 65px;
+    background: url(../img/user/ico3.png) no-repeat;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.intr>.sportIntr>.main>.right>.content>div>.healthyDetails>.canDo>.canRun{  background-position: -5px -128px;  }
+.intr>.sportIntr>.main>.right>.content>div>.healthyDetails>.canDo>.canMeat{  background-position: -103px -128px;  }
+.intr>.sportIntr>.main>.right>.content>div>.healthyDetails>.canDo>.canGas{background-position: -201px -128px;  }
+.intr>.sportIntr>.main>.right>.content>div>.healthyDetails>.canDo>.canLight{background-position: -299px -124px;  }
+.intr>.sportIntr>.main>.right>.content>div>.healthyDetails>div>.mySportTotal2+p{
+    margin-bottom:10px;
+    font-weight: bold;
+}
+.intr>.sportIntr>.main>.right>.content>div>.paihangbang{
+    background-image: url(../img/user/sports_title.png);
+    background-repeat: no-repeat;
+    height: 112px;
+    width: 185px;
+    margin-bottom: 10px;
+}
+.intr>.sportIntr>.main>.right>.content>div>.topAll{
+    margin-left: 53px;
+    background-position: -7px 0;
+    margin-right: 100px;
+    float: left;
+}
+.intr>.sportIntr>.main>.right>.content>div>.topFriend{
+    margin-right:50px;
+    background-position: -215px 0;
+    float: right;
+    margin-bottom: 32px;
+}
+.intr>.sportIntr>.main>.right>.content>div>ul{
+    float: left;
+    margin-left: 53px;
+    margin-bottom: 3px;
+}
+.intr>.sportIntr>.main>.right>.content>div>ul>li{
+    float: left;
+    width: 60px;
+    cursor: pointer;
+    background-color: #d9d9d9;
+    margin-left: 2px;
+    text-align: center;
+    font-size: 12px;
+}
+.intr>.sportIntr>.main>.right>.content>div>ul>li.on{
+    background-color: #f1cc7e;
+    color: #FFFFFF;
+    cursor: default;
+}
+.intr>.sportIntr>.main>.right>.content>div>.chart{
+    width:246px;
+    height:400px;
+    padding-top: 15px;
+    border-top:2px solid #D9D9D9;
+    float: left;
+    margin-left: 53px;
+}
+.intr>.sportIntr>.main>.right>.content>div>.chart2{
+    width:246px;
+    height:400px;
+    padding-top: 15px;
+    border-top:2px solid #D9D9D9;
+    float: right;
+    margin-right: 53px;
+}
+/*回去用photoshop量尺寸*/
+.intr>.sportIntr>.main>.right>.content>div>div>.friendNum{
+    background: url(../img/user/icon.png) no-repeat;
+    width: 68px;
+    height:394px;
+    float: left;
+
+}
+.intr>.sportIntr>.main>.right>.content>div>div>ul{
+    width:400px;
+    width:168px;
+    float: left;
+    margin-left: 10px;
+}
+.intr>.sportIntr>.main>.right>.content>div>div>ul>li{
+    width: 100%;
+    height: 40px;
+}
+.intr>.sportIntr>.main>.right>.content>div>div>ul>li>a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: left;
+    color: #699000;
+}
+.intr>.sportIntr>.main>.right>.content>div>div>ul>li>a>img{
+    width:30px;height: 30px;
+}
+.intr>.sportIntr>.main>.right>.content>div>div>ul>li>a>b{
+display: inline-block;
+    font-weight: normal;
+    line-height: 30px;
+    height: 30px;
+    vertical-align: top;
+    font-size: 15px;
+    margin-left: 10px;
+}
+/*bodyControl*/
+.intr>.sportIntr>.main>.right>.content>div>.healthyManage{
+    width: 650px;
+    /*测试*/
+    /*height: 400px;*/
+    padding-top: 30px;
+    background-color: #f3f3f3;
+    border-radius: 7px;
+    position: relative;
+}
+.intr>.sportIntr>.main>.right>.content>div>.healthyManage>:first-child{
+    width: 513px;
+    height: 135px;
+    background-color: #e8eee1;
+    margin-left: 90px;
+    position: relative;
+}
+.intr>.sportIntr>.main>.right>.content>div>.healthyManage>:first-child>.bodyHealthy{
+    width: 135px;
+    height: 95px;
+    background: url(../img/user/round.png) no-repeat;
+    background-position: -142px -176px;
+    margin-left: -68px;
+    padding-top: 40px;
+    position: relative;
+    margin-right: 34px;
+    float: left;
+}
+.intr>.sportIntr>.main>.right>.content>div>.healthyManage>:first-child>p{
+    font-size: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    position: absolute;
+    top:-10px;
+    left: -40px;
+}
+.intr>.sportIntr>.main>.right>.content>div>.healthyManage>:first-child>span{
+    display: block;
+font-size: 18px;
+    color:#FFFFFF;
+    text-align: center;
+    position: absolute;
+    top:80px;
+    left: -40px;
+}
+.intr>.sportIntr>.main>.right>.content>div>.healthyManage>:first-child>.bgBMI{
+    width: 38px;
+    height: 44px;
+    background: url(../img/user/ico3.png) no-repeat;
+    overflow: hidden;
+    background-position: -232px -193px;
+    text-align: center;
+    line-height: 35px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-style: normal;
+    position: absolute;
+    left:180px;
+}
+.intr>.sportIntr>.main>.right>.content>div>.healthyManage>:first-child>.bmiLine{
+    width: 328px;
+    height: 22px;
+    position: absolute;
+    left:100px;
+    top:44px;
+    background: #F29C9C;
+}
+.intr>.sportIntr>.main>.right>.content>div>.healthyManage>:first-child>.bmiLine>span{
+    height: 100%;
+    color:#FFFFFF;
+    font-weight: bold;
+    float: left;
+}
+.intr>.sportIntr>.main>.right>.content>div>.healthyManage>:first-child>img{
+float: right;
+    margin-right: 20px;
+}
+.intr>.sportIntr>.main>.right>.content>div>.healthyManage>.bgHeight{
+    /*position: absolute;*/
+    width: 40px;
+    height: 100px;
+    /*top: 153px;*/
+    /*left: 55px;*/
+    background: url(../img/user/ico3.png) no-repeat;
+    background-position: -7px -245px;
+    overflow: hidden;
+    margin-left: -500px;
+    margin-top:-10px;
+}
+.intr>.sportIntr>.main>.right>.content>div>.healthyManage>.bgHeightDetail{
+    width: 513px;
+    height: 110px;
+    padding-top: 15px;
+    margin-left: 95px;
+    /*position: absolute;*/
+    /*top:173px;*/
+    margin-top: -85px;
+}
+.intr>.sportIntr>.main>.right>.content>div>.healthyManage>.bgHeightDetail>table{
+    font-size: 12px;
+}
+.intr>.sportIntr>.main>.right>.content>div>.healthyManage>.bgHeightDetail>table>tbody>tr>td>input{
+    width: 50px;
+    line-height: 200%;
+    color:#888;
+    font-weight: 900;
+    border-radius: 10px;
+}
+.intr>.sportIntr>.main>.right>.content>div>.healthyManage>.bgHeightDetail>table>tbody>tr>td>input[type="button"]{
+    background: #709E18;
+    color:#FFFFFF;
+    border:none
+}
+.intr>.sportIntr>.main>.right>.content>div>.healthyManage>.bgHeightDetail>table>tbody>tr>td>a{
+    color:#699000;
+}
+.intr>.sportIntr>.main>.right>.content>div>.healthyManage>p{
+    font-size: 18px;
+    color:#545454;
+    text-align: left;
+    background: #E4E4E4;
+}
+.intr>.sportIntr>.main>.right>.content>div>.healthyManage>p>b{
+    font-size: 36px;
+}
+.intr>.sportIntr>.main>.right>.content>div>a{
+color:#699000;
+    text-decoration: underline;
+}
+.intr>.matchIntr>.main>.left>:first-child{
+    width: 100%;height: 140px;border:none;box-shadow: none;margin-bottom: 10px;
+}
+.intr>.matchIntr>.main>.left>:first-child>img{
+   width: 80px;height: 80px;float: left;
+}
+.intr>.matchIntr>.main>.left>:first-child>ul{
+   float: left;margin-left: 30px;
+}
+.intr>.matchIntr>.main>.left>:first-child>ul>li>a{
+    color:#699000;text-decoration: none;font-size: 22px;
+}
+.intr>.matchIntr>.main>.left>p>button{
+   width:150px;height: 50px;font-size: 18px;background:#FFA200;color:#FFFFFF;border: none;border-radius: 10px;}
+.intr>.matchIntr>.main>.left>p>a{
+    color:#699000;font-size: 12px;
+}

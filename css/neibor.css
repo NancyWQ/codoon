@@ -1,0 +1,146 @@
+.header>.title{
+    background:gray;
+    position:relative;
+    z-index: 10;
+    margin-bottom: 50px;
+}
+/*颜色变化*/
+.header>.title .header_first>ul>.menu>ul>:nth-child(1)>a{
+    color:#fff;
+}
+.header>.title .header_first>ul>.menu>ul>:nth-child(1)>a:hover{
+    color:#00bc71;
+}
+.header>.main{
+    height:670px;
+}
+.leftImg{width:156px; float:left; margin:0 0 30px 0; padding:10px 0; text-align:center; border:1px solid #34538b; list-style-type:none;}
+.leftImg>li{padding-top:14px; padding-bottom:5px; box-sizing: border-box}
+.leftImg>li>a{
+    display: inline-block;
+    width:100%;
+}
+.leftImg>li>a>img{padding:1px; border:2px solid white;height:106px;width:100%;box-sizing: border-box}
+.leftImg>li>a.on>img{border-color:#0CF;}
+.imageRight{width:700px; margin-left:10px; margin-bottom:30px;float:left;height:667px; position:relative; overflow:hidden;}
+.imgMove{width:700px; padding:0; margin:0; position:absolute; left:5px; top:0px; list-style:none; font-size:0;}
+.imgMove li{height:667px; text-align:center;padding:2px}
+.imgMove li img{vertical-align:middle;  height:100%;width: 100%;box-sizing: border-box}
+.imgMove li span{display:inline-block; width:1px; height:100%; vertical-align:middle;}
+.zxx_ad{float:left; margin-left:15px;}
+.zxx_bottom{padding:40px 0; margin-top:20px; clear:both; text-align:center; font-size:12px;}
+a{color:#34538b; text-decoration:underline;}
+a:hover{color:#f30;}
+.neiborIntr{
+    width:100%;
+    /*height:300px;*/
+    /*background:#000000;*/
+    margin-top: 50px;
+}
+.neiborIntr>.main>div>p{
+    width: 100%;
+    padding-bottom:10px ;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.neiborIntr>.main>div>p>span{
+    display: inline-block;
+}
+.neiborIntr>.main>div>p>:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+}
+.neiborIntr>.main>div>p>:nth-child(2){
+    float: right;
+}
+.neiborIntr>.main>div>p>:nth-child(2)>button{
+    display: inline-block;
+    width:40px;
+    height: 20px;
+    background: #DDDDDD;
+    border:none;
+    color:#A2A2A2;
+}
+.neiborIntr>.main>div{
+    position: relative;
+    height:600px
+}
+.neiborIntr>.main>div>.info{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    /*height:215px;*/
+}
+.neiborIntr>.main>.neiborFloor2>.info{
+    height:320px;
+}
+.neiborIntr>.main>div>.info>div{
+    width:23%;
+    height: 215px;
+    margin-bottom: 38px;
+    background-color: #f6f6f6;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    position: relative;
+}
+.neiborIntr>.main>div>.info>div>img{
+    width:100%;
+    height: 88px;
+}
+.neiborIntr>.main>div>.info>div>h5{
+    text-align: left;
+    margin: 14px 13px 6px;
+    font-size: 14px;
+    line-height: 16px;
+    word-wrap: break-word;
+}
+.neiborIntr>.main>div>.info>div>p{
+    overflow: hidden;
+    height: 58px;
+    text-align: left;
+    font-size: 12px;
+    padding: 0 13px;
+    color: #696969;
+    box-sizing: border-box;
+}
+.neiborIntr>.main>div>.info>div>div{
+    width: 100%;
+    height:100%;
+    background: transparent;
+    position: absolute;
+    top: 0px;
+}
+.neiborIntr>.main>.neiborFloor2>p>span>b{
+    font-size: 15px;
+    margin-left:15px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.neiborIntr>.main>.neiborFloor2{
+    height:400px;
+    overflow: hidden;
+}
+.neiborFloor2>.hide{
+    display: none;
+}
+.neiborIntr>.main>.neiborFloor2>.info>div>img{
+    height: 220px;
+}
+.neiborIntr>.main>.neiborFloor2>.info>div{
+    height:300px;
+}
+.inputBox{
+    margin-top:20px;width:100%;text-align: center;height:30px;
+}
+.inputBox>input{
+    width: 30%;height:100%;box-sizing: border-box;margin-right: 20px;
+}
+.inputBox>button{
+    height: 100%;
+    border: none;
+    background: #00bc71;
+    color:#ffffff;
+}
+.serve{
+    margin-right: 50px;
+}

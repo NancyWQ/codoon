@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>用户页</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/user.css"/>
+</head>
+<body>
+<div class="header">
+<div class="main">
+    <a href="index.html"></a>
+    <ul>
+        <li><a href="index.html" class="choose">首页</a></li>
+        <li><a href="#" id="sport">运动</a></li>
+        <li><a href="#" id="match">竞赛</a></li>
+        <li><a href="company.html">俱乐部</a></li>
+    </ul>
+    <div>
+        <ul>
+            <li><a href="#">
+                <img src="img/user/avatar_small/portrait6103e9136ab244cf908d5d1cb2112787!24m24.jpg" alt=""/>
+                <span>20150614</span>
+                <div class="sanDown"></div>
+            </a></li>
+            <li><a href="#">个人设置</a></li>
+            <li><a href="#">我的账户</a></li>
+            <li><a href="#">我的好友</a></li>
+            <li><a href="#">退出登录</a></li>
+        </ul>
+        <div class="frontUser"></div>
+        <div class="fans">6</div>
+        <ul class="message">
+            <li><a href="#">粉丝</a><span>+6</span></li>
+            <li><a href="#">评论</a><span></span></li>
+            <li><a href="#">通知</a><span></span></li>
+            <li><a href="#">请求</a><span></span></li>
+        </ul>
+    </div>
+</div>
+</div>
+<div class="intr" style="padding-bottom: 30px;">
+<div class="indexIntr">
+    <div class="main">
+    <div class="left">
+        <img src="img/user/avatar_big/portrait6103e9136ab244cf908d5d1cb2112787!220m220.jpg" alt=""/>
+        <a href="#">20160514</a>
+        <div class="honour">
+            <ul>
+                <li><a href="#" class="km"></a></li>
+                <li><a href="#" class="location"></a></li>
+                <li><a href="#" class="xunzhang"></a></li>
+                <li><a href="#" class="kms"></a></li>
+            </ul>
+            <a href="#">
+                <span>绑定微博，赢1千卡币</span>
+                <span>x</span>
+            </a>
+        </div>
+        <div class="activities">
+        <b>活动推荐</b>
+        <a href="#"title="换一个"></a>
+        <a href="#"title="换一个"></a>
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div>
+            <img src="img/user/backend3072a0898957449787c7beb61cd6ed1d!650m0.jpg" alt="招商爱行走"/>
+        </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="bgtop"></div>
+        <div class="content">
+            <p>我加入咕咚以来</p>
+            <div class="dPicture">
+                <div class="dBg"></div>
+                <div class="dDetail dD1">
+                    <img src="img/user/bp2.png" alt=""/>
+                    <P>141468</P>
+                    <div></div>
+                </div>
+                <div class="dDetail dD2">
+                    <img src="img/user/bp3.png" alt=""/>
+                    <P>340</P>
+                    <div></div>
+                </div>
+                <div class="dDetail dD3">
+                    <img src="img/user/bp.png" alt=""/>
+                    <P>1908.5</P>
+                    <div></div>
+                </div>
+            </div>
+            <b class="nav on">智能配件</b>
+            <b class="nav">手机运动</b>
+            <!-- 智能配件-->
+            <div class="phoneBanner">
+                <a href="#">
+                    <img src="img/user/banner1.jpg" alt=""/>
+                </a>
+            </div>
+            <!-- 手机运动-->
+            <div class="phoneBanner">
+                <div>
+                <b>2018-02-06<b>22:01:55上传</b></b>
+                 <div>
+                     <img src="img/user/run.jpg" alt=""/>
+                     <ul>
+                         <li><a href="#"><i class="detailCommon time"></i><span>用时<b>01</b>小时<b>23</b>分钟</span></a></li>
+                         <li><a href="#"><i class="detailCommon distance"></i><span>距离<b>6.8</b>公里</span></a></li>
+                         <li><a href="#"><i class="detailCommon kaluli"></i><span>燃烧<b>486.8</b>大卡</span></a></li>
+                         <li><a href="#"><i class="detailCommon aveSpeed"></i><span>平均速度<b>4.9</b>公里/小时</span><b></b></a></li>
+                         <li><a href="#"><i class="detailCommon aveMin"></i><span>平均<b>12.2</b>分钟/公里</span><b></b></a></li>
+                         <li><a href="#"><i class="detailCommon fastSpeed"></i><span>最快速度<b>57.8</b>公里/小时</span><b></b></a></li>
+                     </ul>
+                 </div>
+                </div>
+                <div>
+                    <div class="map" id="allmap"></div>
+                    <div class="weekExercise">
+                        <div class="bgLine"></div>
+                        <div class="bgLine"></div>
+                        <div class="bgLine"></div>
+                        <div class="bgLine"></div>
+                        <div class="bgLine bgLineLast"></div>
+                        <p>近七天里程</p>
+                        <table class="date">
+                            <tbody>
+                            <tr>
+                                <td>2.3</td>
+                                <td>2.4</td>
+                                <td>2.5</td>
+                                <td>2.6</td>
+                                <td>2.7</td>
+                                <td>2.8</td>
+                                <td>今天</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table class="miles">
+                            <tbody>
+                            <tr>
+                                <td>公里</td>
+                            </tr>
+                            <tr>
+                                <td>6.8</td>
+                                </tr>
+                            <tr>
+                                <td>5.1</td>
+                            </tr>
+                            <tr>
+                                <td>3.4</td>
+                            </tr>
+                            <tr>
+                                <td>1.7</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="zhuzhuangtu">
+                            <canvas class="can" width="282px" height="129px">
+                                您的浏览器版本太低，不支持canvas
+                            </canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="sportIntr" style="display: none">
+    <div class="main">
+        <div class="left">
+            <h3>健康管理</h3>
+            <ul>
+                <li><a href="#" class="on">
+                    <i class="SportCommon sportSport"></i>
+                    <h5>我的运动</h5>
+                </a></li>
+                <li><a href="#">
+                    <i class="SportCommon sportBody"></i>
+                    <h5>身体管理</h5>
+                </a></li>
+                <li><a href="#">
+                    <i class="SportCommon sportExercise"></i>
+                    <h5>健身追踪器</h5>
+                </a></li>
+                <li><a href="#">
+                    <i class="SportCommon sportSleep"></i>
+                    <h5>睡眠分析</h5>
+                </a></li>
+                <li><a href="#">
+                    <i class="SportCommon sportPhone"></i>
+                    <h5>手机咕咚</h5>
+                </a></li>
+                <li><a href="#">
+                    <i class="SportCommon sportRide"></i>
+                    <h5>咕咚骑行</h5>
+                </a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="bgtop"></div>
+            <div class="content">
+                <!-- 我的运动-->
+                <div   class="mySports">
+                    <p>你本周的健康状况</p>
+                    <div class="healthyDetails">
+                        <canvas class="healthyPosition" width="190" height="190">您的浏览器版本太低，不能识别canvas</canvas>
+                        <canvas class="healthyPosition" width="190" height="190">您的浏览器版本太低，不能识别canvas</canvas>
+                        <canvas class="healthyPosition" width="190" height="190">您的浏览器版本太低，不能识别canvas</canvas>
+                    </div>
+                    <p>你在咕咚网的运动总量</p>
+                    <div class="healthyDetails">
+                        <div>
+                            <i class="mySportTotal totalDistance"></i>
+                            <div class="totalDetail">
+                                <p>累计运动距离</p>
+                                <h1>1914</h1>
+                                <p>公里</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="mySportTotal totalTime"></i>
+                            <div class="totalDetail">
+                                <p>累计运动时间</p>
+                                <h1>341</h1>
+                                <p>天</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="mySportTotal totalCal"></i>
+                            <div class="totalDetail">
+                                <p>累计燃烧热量</p>
+                                <h1>141837</h1>
+                                <p>大卡</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p>这些运动量可以</p>
+                    <div class="healthyDetails">
+                        <div class="canDo">
+                            <i class="mySportTotal2 canRun"></i>
+                            <p>绕环形跑道(圈)</p>
+                            <h1>4785</h1>
+                        </div>
+                        <div class="canDo canDo1">
+                            <i class="mySportTotal2 canMeat"></i>
+                            <p>消耗肥肉(公斤)</p>
+                            <h1>18</h1>
+                        </div>
+                        <div class="canDo">
+                            <i class="mySportTotal2 canGas"></i>
+                            <p>省93#汽油(升)</p>
+                            <h1>18</h1>
+                        </div>
+                        <div class="canDo canDo1">
+                            <i class="mySportTotal2 canLight"></i>
+                            <p>60W灯泡亮(小时)</p>
+                            <h1>2746</h1>
+                        </div>
+                    </div>
+                    <p style="width:50%;float: left">你在咕咚网的排名&nbsp;万名之外</p>
+                    <p style="width:40%;text-align: right;float: right;margin-right: 53px;">当天你在朋友中排名&nbsp;<b>5</b></p>
+                    <i class="paihangbang topAll"></i>
+                    <i class="paihangbang topFriend"></i>
+                    <ul>
+                        <li class="on">当天</li>
+                        <li>7天</li>
+                        <li>30天</li>
+                        <li>所有</li>
+                    </ul>
+                    <div class="chart">
+                        <i class="friendNum"></i>
+                        <ul>
+                            <li><a href="#"><img src="img/user/avatar_small/backend3f057acd027344fa917aa4173f85db1b!40m40.png" alt=""/><b>哼哈2将77687111</b></a></li>
+                            <li><a href="#"><img src="img/user/avatar_small/backend3f057acd027344fa917aa4173f85db1b!40m40.png" alt=""/><b>629_wHM</b></a></li>
+                            <li><a href="#"><img src="img/user/avatar_small/backend3f057acd027344fa917aa4173f85db1b!40m40.png" alt=""/><b>沒欣沒肺小迷糊</b></a></li>
+                            <li><a href="#"><img src="img/user/avatar_small/backend3f057acd027344fa917aa4173f85db1b!40m40.png" alt=""/><b>李镔84649662</b></a></li>
+                            <li><a href="#"><img src="img/user/avatar_small/backend3f057acd027344fa917aa4173f85db1b!40m40.png" alt=""/><b>LucyWW</b></a></li>
+                            <li><a href="#"><img src="img/user/avatar_small/backend3f057acd027344fa917aa4173f85db1b!40m40.png" alt=""/><b>大步向前迈</b></a></li>
+                            <li><a href="#"><img src="img/user/avatar_small/backend3f057acd027344fa917aa4173f85db1b!40m40.png" alt=""/><b>_酱油打一壶</b></a></li>
+                            <li><a href="#"><img src="img/user/avatar_small/backend3f057acd027344fa917aa4173f85db1b!40m40.png" alt=""/><b>673_我心飞翔</b></a></li>
+                            <li><a href="#"><img src="img/user/avatar_small/backend3f057acd027344fa917aa4173f85db1b!40m40.png" alt=""/><b>木介木</b></a></li>
+                            <li><a href="#"><img src="img/user/avatar_small/backend3f057acd027344fa917aa4173f85db1b!40m40.png" alt=""/><b>_魏世举zyyt</b></a></li>
+                        </ul>
+                        <!-- 还需要三个ul-->
+                    </div>
+                    <div class="chart2">
+                        <i class="friendNum"></i>
+                        <ul>
+                            <li><a href="#"><img src="img/user/avatar_small/backend3f057acd027344fa917aa4173f85db1b!40m40.png" alt=""/><b>哼哈2将77687111</b></a></li>
+                            <li><a href="#"><img src="img/user/avatar_small/backend3f057acd027344fa917aa4173f85db1b!40m40.png" alt=""/><b>629_wHM</b></a></li>
+                            <li><a href="#"><img src="img/user/avatar_small/backend3f057acd027344fa917aa4173f85db1b!40m40.png" alt=""/><b>沒欣沒肺小迷糊</b></a></li>
+                            <li><a href="#"><img src="img/user/avatar_small/backend3f057acd027344fa917aa4173f85db1b!40m40.png" alt=""/><b>李镔84649662</b></a></li>
+                            <li><a href="#"><img src="img/user/avatar_small/backend3f057acd027344fa917aa4173f85db1b!40m40.png" alt=""/><b>LucyWW</b></a></li>
+                            <li><a href="#"><img src="img/user/avatar_small/backend3f057acd027344fa917aa4173f85db1b!40m40.png" alt=""/><b>大步向前迈</b></a></li>
+                            <li><a href="#"><img src="img/user/avatar_small/backend3f057acd027344fa917aa4173f85db1b!40m40.png" alt=""/><b>_酱油打一壶</b></a></li>
+                            <li><a href="#"><img src="img/user/avatar_small/backend3f057acd027344fa917aa4173f85db1b!40m40.png" alt=""/><b>673_我心飞翔</b></a></li>
+                            <li><a href="#"><img src="img/user/avatar_small/backend3f057acd027344fa917aa4173f85db1b!40m40.png" alt=""/><b>木介木</b></a></li>
+                            <li><a href="#"><img src="img/user/avatar_small/backend3f057acd027344fa917aa4173f85db1b!40m40.png" alt=""/><b>_魏世举zyyt</b></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 身体管理-->
+                <div class="bodyControl">
+                    <p>身体管理</p>
+                    <div class="healthyManage">
+                        <div>
+                            <i class="bodyHealthy"></i>
+                            <p>健康</p>
+                            <span>BMI 20.8</span>
+                            <i class="bgBMI">20.8</i>
+                            <div class="bmiLine">
+                                <span style="padding-left: 25px;background: #96CCE8">18.5</span>
+                                <span style="padding-left: 84px; background: #B2D67E">24</span>
+                                <span style="padding-left: 60px;background: #F5D077">28</span>
+                            </div>
+                            <img src="img/user/woman.png" alt=""/>
+                        </div>
+                        <i class="bgHeight"></i>
+                        <div class="bgHeightDetail">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>身高</td>
+                                    <td><input type="text"/></td>
+                                    <td>厘米</td>
+                                    <td rowspan="2"><input type="button" value="保存"/></td>
+                                    <td rowspan="2">根据身高，计算</td>
+                                    <td rowspan="2">{</td>
+                                    <td>走路步长</td>
+                                    <td><input type="text"/></td>
+                                    <td>厘米</td>
+                                    <td><a href="#">更改</a></td>
+                                </tr>
+                                <tr>
+                                    <td>体重</td>
+                                    <td><input type="text"/></td>
+                                    <td>公斤</td>
+                                    <td>跑步步长</td>
+                                    <td><input type="text"/></td>
+                                    <td>厘米</td>
+                                    <td><a href="#">更改</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>你的理想体重<b>63.6</b>公斤，还需要摄入热量<b>10740</b>大卡，注意加强营养，合理搭配膳食！！</p>
+                    </div>
+                </div>
+                <!-- 健身追踪器-->
+                <div class="keepFit">
+                    <p>健身追踪</p>
+                    <div>周目标：<span>步数&nbsp;7000步</span><input type="button" value="更改"/></div>
+                    <div style="display:none">周目标：<select name="typeChoose" id="">
+                        <option value="1">步数</option>
+                        <option value="2">距离</option>
+                        <option value="3">卡路里</option>
+                    </select>
+                        <input type="text"/>
+                        <span>步</span>
+                        <input type="button" value="保存"/>
+                        <input type="button" value="取消"/>
+                    </div>
+                </div>
+                <!-- 睡眠分析-->
+                <div class="sleepInfo">
+                    <p>该功能暂未上线</p>
+                    <a href="index.html">点击此处跳转到首页</a>
+                </div>
+                <!-- 手机咕咚-->
+                <div class="phoneCodoon">
+                    <p>该功能暂未上线</p>
+                    <a href="index.html">点击此处跳转到首页</a>
+                </div>
+                <!-- 咕咚骑行-->
+                <div class="codoonRide">
+                    <p>该功能暂未上线</p>
+                    <a href="index.html">点击此处跳转到首页</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="matchIntr" style="display: none">
+    <div class="main">
+        <div class="left">
+            <div>
+                <img src="img/user/avatar_big/portrait6103e9136ab244cf908d5d1cb2112787!220m220.jpg" alt="" />
+                <ul >
+                    <li><a href="#">20160514</a></li>
+                    <li>战斗等级 &nbsp;<b>3</b></li>
+                    <li>胜率 &nbsp;<b>0.0%</b></li>
+                </ul>
+            </div>
+            <p>
+                <button >发起竞赛</button>
+                <a href="#" >介绍<br>规则</a>
+            </p>
+        </div>
+        <div class="right">
+            <div class="bgtop"></div>
+            <div class="content">
+                <p>暂无</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="footers"></div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/commonFunction.js"></script>
+<!--出错 canvas无法显示 原因 js的版本问题-->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=gqMUb5u9hFyGGGPomhCK17aXrffD7OCM"></script>
+<script src="js/user.js"></script>
+</html>

@@ -1,0 +1,274 @@
+.intr{
+    background-color: #f3f3f3;
+}
+.main>a{
+    display:inline-block ;
+    width:100%;
+    height:100px;
+    position: relative;
+}
+.slognLogin{
+    width: 125px;
+    height: 54px;
+    display: inline-block;
+    background: url('../img/login/img.png') -1px -60px no-repeat;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+}
+.box{
+    margin-top: 40px;
+    width:100%;
+    min-height:360px;
+}
+.box>div{
+    height:100%;
+}
+.box>.left{
+    width:60%;
+border-right:1px solid #a3b27a;
+}
+.box>.left>h2{
+    line-height: 24px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: normal;
+}
+.box>.left>table{
+    width:90%;
+}
+.intrTitle{
+    color: #333333;
+    font-size: 14px;
+    line-height: 42px;
+    margin-right: 10px;
+    display: inline;
+}
+.intrInput{
+    color: rgb(169, 169, 169);
+    border: none;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 6px 2px;
+    width: 210px;
+    height: 24px;
+    /*float: left;*/
+    vertical-align: middle;
+    background: url("../img/login/welcomeInputCenter.png") repeat-x;
+    float: left;
+}
+.intrInputy{
+    width: 100px;
+}
+.yanzhengma{
+    height:35px;
+    width:100px;
+    margin-left: 10px;
+}
+.border-left{
+    height: 35px;
+    width: 5px;
+    float: left;
+    background: url(../img/login/welcomeInputLeft.png) no-repeat;
+}
+.border-right{
+    width: 5px;
+    height: 35px;
+    float: left;
+    background: url(../img/login/welcomeInputRight.png) no-repeat;
+}
+.intrDetail{
+font-size: 12px;
+    float: right;
+}
+a.intrDetail{
+    color:#699000;
+    float: left;
+    border-left:1px solid #699000;
+    padding-left:3px;
+    margin-left: 2px;
+}
+.loginBtn,.registerBtn{
+    width: 70px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10%;
+    height: 35px;
+    background: url(../img/login/greenBtnCenter.png) repeat-x;
+    line-height: 35px;
+    color: #ffffff;
+    padding: 0 2px;
+    text-align: center;
+}
+a{
+    color:#699000;
+}
+.box>.right{
+    float: right;
+    width:38%;
+    /*background: #000000;*/
+    padding-left: 35px;
+    box-sizing: border-box;
+}
+.box>.right>h3{
+    font-size: 18px;
+    font-weight:normal;
+}
+.box>.right>ul{
+    width: 50%;
+    height:24px;
+    float: left;
+    margin-top: 20px;
+}
+.box>.right>ul>li{
+    float:left
+}
+.box>.right>ul>:nth-child(2){
+    line-height: 24px;
+    height:24px;
+    text-align: center;
+}
+.xinlang{
+    width: 30px;
+    height: 24px;
+    margin-right: 10px;
+    background-position: -34px -269px;
+    background: url(../img/login/weixin.png) no-repeat;
+    overflow: hidden;
+}
+.weixin{
+    width: 30px;
+    height: 24px;
+    margin-right: 10px;
+    /*background-position: -34px -269px;*/
+    background: url(../img/login/weixin.png) no-repeat;
+    overflow: hidden;
+}
+.qq{
+    width: 30px;
+    height: 24px;
+    margin-right: 10px;
+    /*background-position: -34px -269px;*/
+    background: url(../img/login/qq2.png) no-repeat;
+    overflow: hidden;
+}
+.footer{
+    width:100%;
+   border-top: 5px solid #7fa731;
+    text-align: center;
+    background-color: #c9d9b3;
+    height: 170px;
+    z-index: 1;
+    position: relative;
+}
+.footer>table{
+    width:55%;
+    height:70%;
+    margin:0 auto;
+    margin-top:20px;
+}
+.commons{
+    display: inline-block;
+    background: url(../img/login/img.png) no-repeat;
+    overflow: hidden;
+}
+.phone{
+    width: 17px;
+    height: 26px;
+    background-position: -10px -270px;}
+.android{
+    width: 21px;
+    height: 26px;
+    background-position: -8px -300px;}
+.product{
+    width: 25px;
+    height: 27px;
+    background-position: -6px -332px;}
+.software{
+    width: 27px;
+    height: 22px;
+    background-position: -5px -361px;}
+.footer>table a{
+    display: inline-block;
+    /*margin-left: 25px;*/
+    color: #333333;
+    font-size: 12px;
+    text-align: left;
+}
+.footer>table>tbody>tr>td{
+    text-align: center;
+}
+.footer>table>tbody>:last-child>td>b{
+    font-weight: normal;
+    color: #919191;
+    font-size: 12px;
+}
+.footer>table>tbody>tr>td>a+b{
+    margin-left:15px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 100%;
+    color: #333333;
+}
+.bg1{
+    width: 62px;
+    height: 22px;
+    background: url(../img/login/bg_flbtn.png?id=1367910055834);
+    font-style: normal;
+    color: #1582bd;
+}
+.sina{
+    float: left;
+    margin: 3px 0 0 3px;
+    height: 14px;
+    width: 16px;
+    overflow: hidden;
+    background: url(../img/login/bg_flbtn.png?id=1367910055834) -190px 0 no-repeat;
+    z-index: 10;
+}
+.bg2{
+    font-style: normal;
+    font-weight: 400;
+    display: inline-block;
+    height: 20px;
+    padding: 0 7px;
+    margin-left: 7px;
+    border: 1px solid #ecd181;
+    border-radius: 2px;
+    background: -webkit-linear-gradient(top,#fef7df,#f9f9f6);
+    vertical-align: middle;
+    line-height: 20px;
+    color: #646464;
+}
+.loading{
+   display: none;
+}
+.note{
+    width: 323px;
+    height: 116px;
+    position: fixed;
+    top:206px;
+    left:235px;
+    display: none;
+}
+.note>div{
+    width:50%;
+    height: 100%;
+    position: absolute;
+    top:25px;
+    left:86px;
+}
+.noteSuccess{
+    background: url(../img/login/successMeg.png);
+}
+.noteFail{
+    background: url(../img/login/FailMeg.png);
+}
+.register-form label, .register-form input { display:block; }
+.register-form input.text { margin-bottom:12px; width:95%; padding: .4em; }
+.register-form fieldset { padding:0; border:0; margin-top:25px; }
+.register-form h1 { font-size: 1.2em; margin: .6em 0; }
+.ui-dialog .ui-state-error { padding: .3em; }
+.validateTips { border: 1px solid transparent; padding: 0.3em; }

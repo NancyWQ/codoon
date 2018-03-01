@@ -1,0 +1,336 @@
+.header>.title{
+    background:gray;
+    /*position:absolute;*/
+    /*top:0;*/
+    position:relative;
+    z-index: 10;
+}
+/* 轮播 */
+.header>.wrap{
+            width:100%;
+            height: 400px;
+            perspective: 1000px;
+            -webkit-perspective: 1500px;
+            margin:50px 0px;
+            position:relative;
+}
+.header>.wrap>.contain{
+            width:100%;
+            height: 100%;
+}
+.header>.wrap>.contain>ul{
+    font-size:0px;
+            width:2.8572%;
+            height:400px;
+            position:relative;
+            float:left;
+            list-style:none;
+            transform-style:preserve-3d;
+            -webkit-transform-origin:center center -200px;
+            -moz-transform-origin:center center -50%;
+            -ms-transform-origin:center center -50%;
+            -o-transform-origin:center center -50%;
+            transform-origin:center center -50%;
+            /*transform:rotateX(90deg) rotateY(0deg);*/
+}
+.header>.wrap>.contain>ul>li{
+            width:100%;
+            height: 100%;
+            position:absolute;
+            font-size:40px;
+}
+.header>.wrap>.contain>ul>li:nth-of-type(1){
+            /*background-color: #666;*/
+            background-image:url('../img/index/pic1.782f4.png');
+						background-size:1349px 400px;
+}
+.header>.wrap>.contain>ul>li:nth-of-type(2){
+            background-image:url('../img/index/pic2.8788c.png');
+			background-size:1349px 400px;
+            top:-100%;
+            -webkit-transform-origin:bottom;
+            -moz-transform-origin:bottom;
+            -ms-transform-origin:bottom;
+            -o-transform-origin:bottom;
+            transform-origin:bottom;
+            -webkit-transform: rotateX(90deg);
+            -moz-transform: rotateX(90deg);
+            -ms-transform: rotateX(90deg);
+            -o-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+}
+.header>.wrap>.contain>ul>li:nth-of-type(3){
+            background-color: #0f0;
+            background-image:url('../img/index/pic5.jpg');
+			background-size:1349px 400px;
+						/*要和高度一样*/
+            -webkit-transform: translateZ(-400px) rotateX(180deg);
+            -moz-transform: translateZ(-400px) rotateX(180deg);
+            -ms-transform: translateZ(-400px) rotateX(180deg);
+            -o-transform: translateZ(-400px) rotateX(180deg);
+            transform: translateZ(-400px) rotateX(180deg);
+}
+.header>.wrap>.contain>ul>li:nth-of-type(4){
+            /*background-color: #00f;*/
+            background-image:url('../img/index/pic3.jpg');
+           background-size:1349px 400px;
+            bottom:-100%;
+            -webkit-transform-origin:top;
+            -moz-transform-origin:top;
+            -ms-transform-origin:top;
+            -o-transform-origin:top;
+            transform-origin:top;
+            -webkit-transform: rotateX(-90deg);
+            -moz-transform: rotateX(-90deg);
+            -ms-transform: rotateX(-90deg);
+            -o-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+}
+.header>.wrap>.nav{
+            height:20px;
+            width:100%;
+            position:absolute;
+            left:0;
+            bottom:10px;
+            /*background-color: red;*/
+            text-align:center;
+			z-index:99;
+}
+.header>.wrap>.nav>span{
+            display:inline-block;
+            line-height:20px;
+            width:20px;
+            border-radius:50%;
+            background-color:#666;
+            margin-right:10px;
+            color:white;
+            font-size:12px;
+            cursor:pointer;
+}
+.header>.wrap>.nav>.active{
+            background-color: gold;
+}
+.header>.slogn{
+    /* position:relative; */
+	position:absolute; 
+	top:115px;
+	left:100px;
+    z-index:10;
+}
+/* .header>.slogn>.main{
+display:flex;flex-wrap:wrap;justify-content: center;
+} */
+.header>.slogn>.main>:nth-child(1){
+  margin-left: 20px;box-sizing: border-box;
+}
+.header>.slogn>.main>:nth-child(2){
+   /*  width:39%; */
+    display:flex;flex-wrap:wrap;justify-content: center;
+}
+.header>.slogn>.main>:nth-child(2)>a{
+    margin-right:15px;
+    font-size:1.5em;
+    background:#00bc71;
+    border-radius: 666px;
+    line-height: 50px;
+    text-align: center;
+    padding:5px 30px;
+}
+/* ************************************************************************************************************ */
+.index-intr>.main{
+ display:flex;flex-wrap:wrap;justify-content: space-between;flex-direction:column;
+ text-align:center;
+ margin-top:100px;}
+.index-intr>.main>div{
+    position: relative;
+    margin-bottom:100px;
+}
+.index-intr>.main>div>p{
+    width:63%;
+    margin:0 auto;
+    /*font-size: 14px;*/
+    font-size: smaller;
+    color: #6f7073;
+    margin-bottom: 10px;}
+.index-intr>.main>div>:nth-child(1){
+    width:63%;
+    margin:0 auto;
+    font-size: 32px;
+    color: #28344a;
+    margin-bottom: 23px;}
+.index-intr>.main>div>.big {
+background-color:red;z-index:20;color:green;
+    position: absolute;
+    top:0px;
+    right: 0px;
+    width:18.5%;
+    height:0px;
+    /*用display会没有出来时候的动画效果，所以用overflow--非常重要，并且必须规定高度*/
+    overflow: hidden;
+    transition: height 0.5s linear;
+}
+.index-intr>.main>div>.more{
+font-size:1.2em;
+border:1px solid #6F7073;
+text-align:center;
+border-radius:666px;color:#6F7073;
+width: 124px;
+height: 36px;
+line-height: 36px;
+margin: 0 auto;
+margin-top: 40px;
+cursor: pointer;
+margin-bottom: 80px;}
+/*.index-intr>.main>div>.index-intr-1-banner {*/
+    /*transition: all .5s linear;*/
+/*}*/
+.index-intr>.main>div>.index-intr-1-banner>li{
+    float: left;
+    width:17.7%;
+    /*width:20%;*/
+    margin:0 6px;
+    /*margin-bottom: 30px;*/}
+.index-intr>.main>div>.index-intr-1-banner>li>img{
+    width:100%;
+    height:318px;
+    margin-top:25px;
+    /*opacity:0;*/
+    position: relative;
+    /*transition-duration:0.4s ;*/
+}
+.index-intr>.main>div>.phone{
+    /*会在下面，所以用定位*/
+    position: relative;
+}
+.index-intr>.main>div>.phone>img{
+    margin-top:-385px;
+    margin-left:-47px;
+    width:220px;height:460px;
+    margin-bottom: 40px;
+}
+.index-intr>.main>div>.card>div{
+    width:33.333%;
+    /*测试*/
+    height:300px;
+    float: left;
+    backface-visibility: hidden;
+    position: relative;
+}
+.index-intr>.main>div>.card>div>div{
+    width:100%;
+    height:100%;
+    /*background:url("../img/index/runshoes.21cac.png") 0 0 no-repeat;*/
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    transition:all .5s linear;
+
+}
+.index-intr>.main>div>.card>div>div>img,.index-intr>.main>div>.card>div>div>div{
+    width:100%;
+    height:100%;
+}
+.index-intr>.main>div>.card>div>div>div{
+	background:rgba(41,50,69,.6);
+	color:#fff;
+	font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+.index-intr>.main>div>.card>div>:nth-child(3){
+    /*display: none;*/
+    /*用opacity更好*/
+    opacity: 0;
+}
+.index-intr>.main>div>.card>div>:nth-child(3)>div{
+    height:50%;
+    padding:20%;
+    box-sizing: border-box;
+}
+.index-intr>.main>div>.card>.parent>.flip{
+    transform: rotate3d(0,1,0,0deg);
+    /*transition-duration: 0.4s;*/
+}
+.index-intr>.main>div>.card>.parent>.fliped{
+    transform: rotate3d(0,1,0,-180deg);
+    /*transition-duration: 0.4s; 不要 opacity就可以实现要求的效果*/
+	/*用透明度解决不想使用背景，又想呈现出一样的效果的问题*/
+	opacity: 0;
+    /*display:none;*/
+}
+.index-intr>.main>div>.pictures>div{
+display: flex;justify-content: space-between;width:100%; height:200px;
+}
+.index-intr>.main>div>.pictures>div>div{
+    height:100%;
+    width:33.33%;
+    position:relative;
+    transition: all 0.5s ease-in-out;
+}
+.index-intr>.main>div>.pictures>:nth-child(1)>:nth-child(1){
+    width:40%;
+}
+.index-intr>.main>div>.pictures>:nth-child(1)>:nth-child(2){
+    width:60%;
+}
+.index-intr>.main>div>.pictures>div>div>:nth-child(1){
+    width:100%;height:100%;
+}
+.index-intr>.main>div>.pictures>div>div>:nth-child(3){
+    width:100%;height:100%;position: absolute;top: 0;left: 0;background: rgba(0,0,0,.3);
+    transition: all 0.5s ease-in-out;
+}
+.index-intr>.main>div>.pictures>div>div>:nth-child(2){
+    width:100%;position: absolute;bottom: 0;left: 0;background: rgba(41,50,69,.6);color:#ffffff;
+    display:none;
+    /*transition: all 0.5s ease-in-out;*/
+}
+.index-intr>.main>div>.pictures>div>div>:nth-child(2)>.picture-title{
+    text-align: left;
+    font-size: 1.3em;
+    margin-bottom: 4px;
+}
+.index-intr>.main>div>.pictures>div>div>:nth-child(2)>.picture-info{
+    text-align: left;
+}
+.index-intr>.main>div>.demo{
+    width:100%;position: relative;height:600px;
+}
+.index-intr>.main>div>.demo>img{
+   width:100%;height:100%;
+}
+.index-intr>.main>div>.demo>div{
+    width:100%;height:100%;position: absolute;top:0px;background:rgba(0,0,0,.3);
+}
+.index-intr>.main>div>.demo>div>div{
+width:100%;height:50%;margin-top:20%;box-sizing: border-box; background:#00bc71;opacity:0.6;color:#fff;border-radius: 6%;
+}
+.index-intr>.main>div>.demo>div>div>ul{
+float: left;width:25%;text-align: center;height:60%;margin-top:5%;box-sizing:border-box;display: flex;flex-direction: column;flex-wrap: wrap;justify-content: space-between;
+}
+.index-intr>.main>div>.demo>div>div>:nth-child(1)>li>i{width:66px;height:66px;background:url("../img/2017-12-07 13-27-11.png") -0px -0px no-repeat;  }
+.index-intr>.main>div>.demo>div>div>:nth-child(2)>li>i{width:66px;height:66px;background:url("../img/2017-12-07 13-27-11.png") -66px -0px no-repeat;  }
+.index-intr>.main>div>.demo>div>div>:nth-child(3)>li>i{width:66px;height:66px;background:url("../img/2017-12-07 13-27-11.png") -198px -0px no-repeat;  }
+.index-intr>.main>div>.demo>div>div>:nth-child(4)>li>i{width:66px;height:66px;background:url("../img/2017-12-07 13-27-11.png") -132px -0px no-repeat;  }
+.index-intr>.main>div>.demo>div>div>ul>li>span{
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+.floor{
+    position: fixed;
+    top:200px;
+    right: 0px;
+    display: none;
+}
+.floor>li{
+    padding: 20px;
+    width:200px;
+    background: #00bc71;
+}
+.floor>li>a{
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+}

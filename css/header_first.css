@@ -1,0 +1,76 @@
+.header_first{
+    width:100%;
+	/*方便 转换*/
+	height:55px;
+	/*边框*/
+     /*border:1px solid red;*/
+	/*背景*/
+	background:transparent;
+	color:#fff;
+	padding-top:25px;
+	box-sizing:border-box;
+} 
+.header_first>ul{
+width:100%;
+}
+.header_first>ul>li,.header_first>ul>.menu>ul>li{
+float:left;
+}
+.header_first>ul>.menu{
+float:right;
+width:66.6%;
+}
+.header_first>ul>.menu>ul{
+width:100%;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+/*会跑 解决办法给li一个宽度*/
+.header_first>ul>.menu>ul>li{
+	width:16%;
+	text-align: center;
+	border: 1px solid transparent;
+	position:relative;
+}
+.header_first>ul>.menu>ul>li>div{
+	 /*display:none;*/
+	height: 0px;
+	overflow:hidden;
+	font-size:8px;
+	width: 100%;
+	/*opacity: 0;*/
+	/*动画 没出来*/
+	transition: height .5s linear;
+	z-index:100;position:absolute;top:28px;
+}
+.header_first>ul>.menu>ul>li>div a{
+display:block;
+color:black;
+background:green;
+}
+.header_first>ul>.menu>ul>li>div a:hover{
+	color:#00bc71;
+}
+.header_first>ul>.menu>ul>:last-child>a{
+font-size:1.2em;
+border:1px solid #fff;
+width:63px;
+height:28px;
+line-height:28px;
+text-align:center;
+border-radius:666px;
+}
+.header_first>ul>.menu>ul>li>a{
+line-height:28px;
+text-align:center;
+}
+.header_first>ul>.menu>ul>li>.color{
+color:#00bc71;
+}
+.header_first>ul>.menu>ul>li>.act{
+	color:#00bc71;
+}
+.logout{
+	background: none;border: none;color:#00bc71;font-size: 20px;cursor: pointer;display: none;float: right;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/login.css"/>
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="intr">
+    <div class="main">
+        <a href="index.html"><i class="slognLogin"></i></a>
+        <div class="box">
+            <div class="left">
+                <h2>要运动，用咕咚</h2>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td class="intrTitle">用户名/手机/邮箱:</td>
+                        <td><div class="border-left"></div><input class="intrInput" type="text" placeholder="用户名/手机/邮箱" name="userName"/><div class="border-right"></div></td>
+                        <td><img src="img/login/loading.gif" alt="" class="loading"/></td>
+                    </tr>
+                    <tr>
+                        <td class="intrTitle">密码：</td>
+                        <td><div class="border-left"></div><input  class="intrInput"type="password" name="userPwd"/><div class="border-right"></div></td>
+                        <td><img src="img/login/loading.gif" alt="" class="loading"/>
+                            <p style="display: none">密码不符合规定</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="intrTitle">验证码：</td>
+                        <td>
+                            <div class="border-left"></div><input class=" intrInput intrInputy" type="text" name="userYzm" placeholder="不区分大小写"/><div class="border-right"></div>
+                            <img src="data/yzm.php" alt="" class="yanzhengma"/>
+                        </td>
+                        <td><a href="#">看不清，换一张</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="intrDetail"><input type="checkbox" checked name="rember"/>记住我</span></td>
+                        <td><a href="#" class="intrDetail forgetPwd">忘记密码?</a></td>
+                    </tr>
+                    <tr>
+                        <td><button class="loginBtn">登录</button></td>
+                        <td><button class="registerBtn">注册</button></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="right">
+                <h3>合作网站账号登录</h3>
+                <ul>
+                    <li><i class="xinlang"></i></li>
+                    <li><a href="#">新浪微博</a></li>
+                </ul>
+                <ul>
+                    <li><i class="weixin"></i></li>
+                    <li><a href="#">微信登录</a></li>
+                </ul>
+                <ul>
+                    <li><i class="qq"></i></li>
+                    <li><a href="#">qq登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+<table>
+    <tbody>
+    <tr>
+        <td colspan="2">
+            <i class="commons phone"></i>
+            <a href="#">iphone应用</a>
+        </td>
+        <td colspan="2">
+            <i class="commons android"></i>
+            <a href="#">Android应用</a>
+        </td>
+        <td colspan="2">
+            <i class="commons product"></i>
+            <a href="#">咕咚产品</a>
+        </td>
+        <td colspan="2">
+            <i class="commons software"></i>
+            <a href="#">同步软件</a>
+        </td>
+    </tr>
+    <tr>
+        <td><a href="#"><i class="bg1"><i class="sina"></i>加关注</i><i class="bg2">127.6万</i></a></td>
+        <td><a href="#">关于我们</a><b>|</b></td>
+        <td><a href="#">商务合作</a><b>|</b></td>
+        <td><a href="#">在线商城</a><b>|</b></td>
+        <td><a href="#">咕咚开放平台</a><b>|</b></td>
+        <td><a href="#">咕咚ROM</a><b>|</b></td>
+        <td><a href="#">使用条款</a><b>|</b></td>
+        <td><a href="#">常见问题</a></td>
+    </tr>
+    <tr>
+        <td colspan="8"><b>Copyright © 2011-2016 Codoon&nbsp;&nbsp;&nbsp;蜀ICP备12014086号</b></td>
+    </tr>
+    </tbody>
+</table>
+</div>
+<div class="noteSuccess note">
+    <div>
+    <p>登录成功，<span>5</span>s后自动跳转到用户页</p>
+    <a href="index.html">现在就跳转到用户页</a>
+    </div>
+</div>
+<div class="noteFail note">
+    <div>
+    <p></p>
+    </div>
+</div>
+<div class="register">
+    <div class="register-form" title="注册">
+        <p class="validateTips">所有的表单字段都是必填的。</p>
+        <form class="formLogin">
+            <fieldset>
+                <label for="uname">用户名</label>
+                <input type="text" name="uname" id="uname" class="text ui-widget-content ui-corner-all">
+                <label for="email">邮箱</label>
+                <input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all">
+                <label for="upwd">密码</label>
+                <input type="password" name="upwd" id="upwd" value="" class="text ui-widget-content ui-corner-all">
+                <label for="cpwd">确认密码</label>
+                <input type="password" name="cpwd" id="cpwd" value="" class="text ui-widget-content ui-corner-all">
+                <label for="phone">手机</label>
+                <input type="text" name="phone" id="phone" value="" class="text ui-widget-content ui-corner-all">
+                <label for="username">真实姓名</label>
+                <input type="text" name="username" id="username" value="" class="text ui-widget-content ui-corner-all">
+                <label for="gender">性别</label>
+                <select name="gender" id="gender">
+                    <option value="0" selected name="gender">男</option>
+                    <option value="1" name="gender">女</option>
+                </select>
+            </fieldset>
+        </form>
+    </div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/commonFunction.js"></script>
+<script src="js/login.js"></script>
+<script src="js/plug-in/jquery-ui.js"></script>
+</html>
